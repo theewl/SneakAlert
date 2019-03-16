@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		table {
+		    font-family: arial, sans-serif;
+		    border-collapse: collapse;
+		    width: 100%;
+		}
+
+		td, th {
+		    border: 1px solid #dddddd;
+		    text-align: left;
+		    padding: 8px;
+		}
+
+		tr:nth-child(even) {
+		    background-color: #dddddd;
+		}
+		</style>	
+		<script src = "jquery-3.3.1.min.js"></script>
+		<script src="popup.js"></script>
+</head>
+	<body>
+		<form>
+			<label><b>Name:</b></label>
+			<br>
+			<input placeholder ="Name" type="text" name="name" id="name">
+			<br>
+			<label><b>Price:</b></label>
+			<br>
+			<input placeholder ="Price" type="text" name="price" id="price">
+			<br>
+			<label><b>Date:</b></label>
+			<br>
+			Month:
+			<select id = "month">
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5</option>
+			  <option value="6">6</option>
+			  <option value="7">7</option>
+			  <option value="8">8</option>
+			  <option value="9">9</option>
+			  <option value="10">10</option>
+			  <option value="11">11</option>
+			  <option value="12">12</option>			
+			</select>			
+			<br>
+			Day:
+			<select id = "day">
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5</option>
+			  <option value="6">6</option>
+			  <option value="7">7</option>
+			  <option value="8">8</option>
+			  <option value="9">9</option>
+			  <option value="10">10</option>
+			  <option value="11">11</option>
+			  <option value="12">12</option>	
+			  <option value="13">13</option>
+			  <option value="14">14</option>
+			  <option value="15">15</option>
+			  <option value="16">16</option>
+			  <option value="17">17</option>
+			  <option value="18">18</option>
+			  <option value="19">19</option>
+			  <option value="20">20</option>
+			  <option value="21">21</option>
+			  <option value="22">22</option>
+			  <option value="23">23</option>
+			  <option value="24">24</option>	
+			  <option value="25">25</option>
+			  <option value="26">26</option>
+			  <option value="27">27</option>
+			  <option value="28">28</option>
+			  <option value="29">29</option>
+			  <option value="30">30</option>
+			  <option value="31">31</option>
+			</select>			
+			<br>			
+			<label><b>Time:</b></label>
+			<br>
+			<input type="time" name="time" id="time" >	
+			<br>
+			<input type="button" value="Submit #1" id="submit">
+			<input type="button" value="Submit #2" id="submit2">
+			<input type="button" value="Submit #3" id="submit3">
+			<input type="button" value="Submit #4" id="submit4">
+			<input type="button" value="Submit #5" id="submit5">
+			<input type="button" value="Submit #6" id="submit6">
+		</form>
+		<table>
+			  <tr>
+			  	<th>#</th>
+			    <th>Name</th>
+			    <th>Price</th>
+			    <th>Date</th>
+			    <th>Time</th>
+			  </tr>		  
+			  <tr>
+			    <td>1</td>
+			    <td><span id = "theName"></span></td>
+			    <td><span id = "thePrice"></span></td>
+			    <td><span id = "theDate"></span></td>
+			    <td><span id = "theTime"></span></td>
+			  </tr>
+			  <tr>
+			    <td>2</td>
+			    <td><span id = "theName2"></span></td>
+			    <td><span id = "thePrice2"></span></td>
+			    <td><span id = "theDate2"></span></td>
+			    <td><span id = "theTime2"></span></td>
+			  </tr>
+			  <tr>
+			  	<td>3</td>
+			    <td><span id = "theName3"></span></td>
+			    <td><span id = "thePrice3"></span></td>
+			    <td><span id = "theDate3"></span></td>
+			    <td><span id = "theTime3"></span></td>
+			  </tr>
+			  <tr>
+			  	<td>4</td>
+			    <td><span id = "theName4"></span></td>
+			    <td><span id = "thePrice4"></span></td>
+			    <td><span id = "theDate4"></span></td>
+			    <td><span id = "theTime4"></span></td>
+			  </tr>			
+			  <tr>
+			  	<td>5</td>
+			    <td><span id = "theName5"></span></td>
+			    <td><span id = "thePrice5"></span></td>
+			    <td><span id = "theDate5"></span></td>
+			    <td><span id = "theTime5"></span></td>
+			  </tr>		
+			  <tr>
+			  	<td>6</td>
+			    <td><span id = "theName6"></span></td>
+			    <td><span id = "thePrice6"></span></td>
+			    <td><span id = "theDate6"></span></td>
+			    <td><span id = "theTime6"></span></td>
+			  </tr>					
+			</tr>
+		</table>
+		<input type="button" value = "Clear Table" id ="clear" >
+		<p hidden><span id = "m1"></span></p>
+		<p hidden><span id = "d1"></span></p>
+		<span id = "hour1"></span>
+		<p hidden><span id = "min1"></span></p>
+		<span id = "m2"></span>
+		<span id = "d2"></span>
+		<span id = "m3"></span>
+		<span id = "d3"></span>
+		<span id = "m4"></span>
+		<span id = "d4"></span>
+		<span id = "m5"></span>
+		<span id = "d5"></span>
+		<span id = "m6"></span>
+		<span id = "d6"></span>
+		</body>
+</html>
